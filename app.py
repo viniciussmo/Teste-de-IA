@@ -4,7 +4,7 @@ from groq import Groq
 
 app = Flask(__name__)
 
-client = Groq(api_key=os.getenv("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"))
+client = Groq(api_key=os.getenv("chave"))
 
 memoria = []
 
@@ -51,3 +51,4 @@ def chat():
     return jsonify({"resposta": resposta})
 
 app.run(host="0.0.0.0", port=5000, debug=True)
+
